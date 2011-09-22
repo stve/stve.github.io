@@ -1,0 +1,43 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
+  <meta name="author" content="{{ site.author }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/boastful.css">
+  <!-- end CSS-->
+
+  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+
+    {% include header.html %}
+
+    <div id="main" role="main">
+    {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </div> <!--! end of #container -->
+
+  {% include javascripts.html %}
+  {% include analytics.html %}
+  {% include ie_javascripts.html %}
+
+</body>
+</html>

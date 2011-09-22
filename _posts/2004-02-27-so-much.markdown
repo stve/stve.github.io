@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: So Much...
+wordpress_id: 18
+wordpress_url: http://www.beforeitwasround.com/2006/02/10/so-much/
+---
+...for that experiment.  I was trying out <a href="http://blo.gs">blo.gs</a> as a way to ease my weblog reading.  I probably read about 20-30 different weblogs.  Initially I had organized my bookmarks in terms of the frequency with which I read them: Daily, Weekly, etc.  But I found it cumbesome to keep digging through my bookmarks all the time.  Blo.gs is well executed and seemingly exactly what I was looking for, an easy way to keep up on these blogs without the work.
+
+But what I've found is that it works with mixed results.  Some sites don't have RSS/ATOM feeds, others don't ping the blo.gs server.  And I find that half the time I end up having to dig into my favorites anyway.
+
+I've seen lots of people liken this to a Push/Pull analogy which I believe is somewhat true.  But I don't know that the Push way works.  There is too much dependency on the user to setup their publishing tool to get this working right.  I have MovableType setup to ping about 4 or 5 different sites that monitor site updates and more often than not, when publishing, one of the pings fails anyway. I've thought about RSS/ATOM readers too, but what if the site you read doesn't have a feed?
+
+There has to be a better way, and I'm going to try and think of one. Any suggestions would be welcome.
