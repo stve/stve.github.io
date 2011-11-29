@@ -1,3 +1,5 @@
 _gist_cache
 _site/*
 .sass-cache
+public
+tmp/*
