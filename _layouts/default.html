@@ -13,12 +13,15 @@
   <meta name="author" content="{{ site.author }}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/screen.css">
   <link rel="stylesheet" href="/css/boastful.css">
-  <!-- end CSS-->
+  <link rel="stylesheet" href="/css/jquery.tweet.css">
 
-  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+  <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
+  <script src="/js/modernizr.custom.min.js"></script>
 </head>
 
 <body>
@@ -35,9 +38,21 @@
 
   </div> <!--! end of #container -->
 
-  {% include javascripts.html %}
-  {% include analytics.html %}
-  {% include ie_javascripts.html %}
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/jquery-1.7.1.min.js"><\/script>')</script>
+  <script src="/js/jquery.tweet.js"></script>
+  <script src="/js/jquery.boastful.js"></script>
 
+  <script>
+    window._gaq = [['_setAccount','UA-6073342-1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
 </body>
 </html>
