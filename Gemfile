@@ -8,5 +8,6 @@ group :development do
   gem 'foreman'
   gem 'compass'
   gem 'rb-fchange'
+  gem 'rb-fsevent'
   gem 'rake'
 end
