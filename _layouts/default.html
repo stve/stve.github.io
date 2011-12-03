@@ -11,22 +11,28 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
   <meta name="author" content="{{ site.author }}">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-  <link rel="stylesheet" href="/css/screen.css" type="text/css" />
-  <link rel="stylesheet" href="/css/boastful.css" type="text/css" />
-  <link rel="stylesheet" href="/css/jquery.tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/css/screen.css" media="screen, projection" type="text/css"/>
+  <link rel="stylesheet" href="/css/boastful.css" type="text/css"/>
+  <link rel="stylesheet" href="/css/jquery.tweet.css" type="text/css"/>
 
-  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <link href="/css/print.css" media="print" rel="stylesheet" type="text/css"/>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
   <!--[if IE]>
-    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
   <![endif]-->
 
   <script src="/js/modernizr.custom.min.js"></script>
 </head>
 
 <body>
+
+  <div class="line"></div>
 
   <div id="container">
 
@@ -36,7 +42,7 @@
     {{ content }}
     </div>
 
-    {% include footer.html %}
+    <!-- {% include footer.html %} -->
 
   </div> <!--! end of #container -->
 
