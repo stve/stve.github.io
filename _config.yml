@@ -1,15 +1,12 @@
-destination: ./_site
-auto: false
-markdown: rdiscount
+permalink: /:year/:month/:title.html
+markdown: redcarpet
 pygments: true
 
+exclude: ["CNAME", "README", "Gemfile", "Gemfile.lock", "Procfile", "config.rb", "sass", "config.ru"]
 
-#
-# Site configuration
-#
-permalink: /:year/:month/:title.html
-url: http://beforeitwasround.com
 title: flat
+url: http://beforeitwasround.com
+
 description: Before It Was Round
 keywords: jekyll, template, blog
 author: Steve Agalloco
