@@ -2,12 +2,20 @@ permalink: /:year/:month/:title.html
 markdown: redcarpet
 pygments: true
 
-exclude: ["CNAME", "README", "Gemfile", "Gemfile.lock", "Procfile", "config.rb", "sass", "config.ru"]
+exclude:
+  - CNAME
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - Procfile
+  - config.rb
+  - sass
+  - config.ru
 
 title: flat
 url: http://beforeitwasround.com
 
 description: Before It Was Round
-keywords: jekyll, template, blog
+keywords: "agalloco, steve agalloco, steve, fanzter, fanzter inc., coolspotters, coolspotters.com, simplesports, simplesports.com, ethicon, johnson &amp; johnson, github, ruby, ruby on rails, git, jquery, tweetstream, charlotte"
 author: Steve Agalloco
 email: steve.agalloco@gmail.com
