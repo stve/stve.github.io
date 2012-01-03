@@ -11,11 +11,28 @@ exclude:
   - config.rb
   - sass
   - config.ru
+  - coffee
 
 title: flat
 url: http://beforeitwasround.com
 
-description: Before It Was Round
-keywords: "agalloco, steve agalloco, steve, fanzter, fanzter inc., coolspotters, coolspotters.com, simplesports, simplesports.com, ethicon, johnson &amp; johnson, github, ruby, ruby on rails, git, jquery, tweetstream, charlotte"
 author: Steve Agalloco
 email: steve.agalloco@gmail.com
+
+description: Before It Was Round
+keywords:
+  - agalloco
+  - steve agalloco
+  - steve
+  - fanzter
+  - coolspotters
+  - simplesports
+  - ethicon
+  - github
+  - ruby
+  - ruby on rails
+  - tophat
+  - airbrake
+  - tweetstream
+  - twitter
+  - charlotte
