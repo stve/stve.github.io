@@ -1,11 +1,17 @@
-@import "compass/reset";
 @import "compass/css3";
 
-.line {
+.navigation {
   width: 100%;
-  height: 10px;
-  background: #cdd071;
-  padding: 0; }
+  background: #632739;
+  border-top: 5px solid #CDD071;
+  h1 {
+    color: #fff;
+  }
+}
+
+.main {
+  margin-top: 20px;
+}
 
 .foot {
   border-top: #cccccc solid 1px;
