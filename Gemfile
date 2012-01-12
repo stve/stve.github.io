@@ -7,6 +7,7 @@ gem 'rack-jekyll', :require => false, :git => 'https://github.com/adaoraul/rack-
 group :development do
   gem 'foreman'
   gem 'compass'
+  gem 'ZURB-foundation'
   gem 'rb-fchange'
   gem 'rb-fsevent'
   gem 'rake'
