@@ -1,5 +1,15 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+@import "ZURB/includes";
+
+// IE styles
+//----------------------------------------------
+//
+// IE specific styles less than IE9. We hate IE.
+
+div.panel {
+  border: 1px solid #ccc; }
+
+.lt-ie8 {
+  .nav-bar li.has-flyout a {
+    padding-right: 20px;
+    &:after {
+      border-top: none; } } }
