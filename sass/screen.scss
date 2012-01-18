@@ -1,5 +1,16 @@
 @import "compass/css3";
 
+// ZURB Foundation settings
+//-----------------------------------------
+
+$grid-max-width: 980px;
+$grid-min-width: 800px;
+
+@import "ZURB-foundation";
+
+// Project Styles
+//-----------------------------------------
+
 .navigation {
   width: 100%;
   background: #632739;

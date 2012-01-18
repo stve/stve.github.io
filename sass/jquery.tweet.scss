@@ -4,7 +4,8 @@
   padding: 0;
   overflow-y: hidden;
   .awesome, .epic {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+  }
   li {
     overflow-y: auto;
     overflow-x: hidden;
@@ -15,4 +16,7 @@
     padding-right: 0.5em;
     float: left;
     img {
-      vertical-align: middle; } } }
+      vertical-align: middle;
+    }
+  }
+}
