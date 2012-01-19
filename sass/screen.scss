@@ -26,9 +26,29 @@ $grid-min-width: 800px;
   }
 }
 
+.social {
+  float: right;
+  a {
+    padding: 20% 8%;
+    display: block;
+  }
+}
+
 .main {
   margin-top: 20px;
+  h2 {
+    font: 1.3em;
+    a {
+      color: #632739;
+    }
+  }
 }
+
+h4.twitter {
+  text-indent: 32px;
+  background: url(/images/twitter.png) no-repeat;
+}
+
 
 .foot {
   border-top: #cccccc solid 1px;

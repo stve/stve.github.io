@@ -1,3 +1,7 @@
+.tweet {
+  margin-top: 10px;
+}
+
 .tweet_list {
   list-style: none;
   margin: 0;
@@ -10,6 +14,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0.5em;
+    padding-left: 0;
     list-style-type: none;
   }
   .tweet_avatar {
