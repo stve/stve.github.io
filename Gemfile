@@ -8,7 +8,7 @@ gem 'rack-rewrite'
 group :development do
   gem 'foreman'
   gem 'compass'
-  gem 'ZURB-foundation'
+  gem 'compass_twitter_bootstrap', :git => 'git://github.com/vwall/compass-twitter-bootstrap.git'
   gem 'rb-fchange'
   gem 'rb-fsevent'
   gem 'rake'
