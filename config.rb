@@ -1,4 +1,10 @@
-require "ZURB-foundation"
+module ::Rails
+  def self.version
+    "3.0"
+  end
+end
+
+require "compass_twitter_bootstrap"
 
 http_path = "/"
 css_dir = "stylesheets"

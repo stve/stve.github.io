@@ -1,15 +1,9 @@
+@import "compass_twitter_bootstrap";
 @import "compass/css3";
 
-// ZURB Foundation settings
-//-----------------------------------------
-
-$grid-max-width: 980px;
-$grid-min-width: 800px;
-
-@import "ZURB-foundation";
-
-// Project Styles
-//-----------------------------------------
+code {
+  overflow: scroll;
+}
 
 .navigation {
   width: 100%;
@@ -27,17 +21,17 @@ $grid-min-width: 800px;
 }
 
 .social {
-  float: right;
+  # float: right;
   a {
-    padding: 20% 8%;
-    display: block;
-  }
+      float: right;
+    }
 }
 
 .main {
   margin-top: 20px;
   h2 {
-    font: 1.3em;
+    font-size: 1.3em;
+    font-family: 'Enriqueta', serif;
     a {
       color: #632739;
     }
@@ -52,9 +46,6 @@ h4.twitter {
 
 .foot {
   border-top: #cccccc solid 1px;
-  footer {
-    float: left;
-  }
   nav {
     float: right;
     ul {
