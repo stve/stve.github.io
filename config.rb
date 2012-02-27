@@ -1,10 +1,4 @@
-module ::Rails
-  def self.version
-    "3.0"
-  end
-end
-
-require "compass_twitter_bootstrap"
+require 'bootstrap-sass'
 
 http_path = "/"
 css_dir = "stylesheets"
