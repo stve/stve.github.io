@@ -1,0 +1,21 @@
+header.navigation {
+  width: 100%;
+  background: #632739;
+  border-top: 5px solid #CDD071;
+  h1 {
+    color: #fff;
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin: 0.5em 0;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  .social {
+    a {
+      float: right;
+    }
+  }
+}
+

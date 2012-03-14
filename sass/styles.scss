@@ -1,5 +1,9 @@
-// I gather this file is a starting point for the project.
 @import "bootstrap";
-
-// Include responsive Bootstrap styles
 @import "bootstrap-responsive";
+
+@import "compass/css3";
+
+@import "header";
+@import "article";
+@import "footer";
+@import "sidebar";

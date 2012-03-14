@@ -1,0 +1,15 @@
+.foot {
+  border-top: #cccccc solid 1px;
+  nav {
+    float: right;
+    ul {
+      list-style: none;
+      float: right;
+      li {
+        margin-right: 20px;
+        font-size: 14px;
+        float: left;
+      }
+    }
+  }
+}
