@@ -8,10 +8,13 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Procfile
+  - Guardfile
   - config.rb
   - sass
   - config.ru
   - coffee
+  - vendor
+  - tmp
 
 title: flat
 url: http://beforeitwasround.com
