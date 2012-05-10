@@ -1,13 +1,15 @@
-window._gaq == null && (window._gaq = [])
-_gaq.push(["_setAccount", "UA-6073342-1"])
-_gaq.push(["_trackPageview"])
-_gaq.push(["_trackPageLoadTime"])
+window._gaq = []
+window._gaq.push(["_setAccount", "UA-6073342-1"])
+window._gaq.push(["_trackPageview"])
+window._gaq.push(["_trackPageLoadTime"])
 
 s = document.createElement("script")
 s.type = "text/javascript"
 s.async = true
-s.src = "" + ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + ".google-analytics.com/ga.js"
+protocol = if document.location.protocol is 'https:' then 'https://ssl' else 'http://www'
+s.src = protocol + ".google-analytics.com/ga.js"
 document.getElementsByTagName("head")[0].appendChild(s)
+
 
 $(document).ready ->
   $('#boastful').boastful()

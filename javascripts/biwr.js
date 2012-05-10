@@ -1,13 +1,13 @@
 (function() {
-  var s, _ref;
+  var protocol, s;
 
-  window._gaq === null && (window._gaq = []);
+  window._gaq = [];
 
-  _gaq.push(["_setAccount", "UA-6073342-1"]);
+  window._gaq.push(["_setAccount", "UA-6073342-1"]);
 
-  _gaq.push(["_trackPageview"]);
+  window._gaq.push(["_trackPageview"]);
 
-  _gaq.push(["_trackPageLoadTime"]);
+  window._gaq.push(["_trackPageLoadTime"]);
 
   s = document.createElement("script");
 
@@ -15,9 +15,9 @@
 
   s.async = true;
 
-  s.src = "" + ((_ref = 'https:' === document.location.protocol) != null ? _ref : {
-    'https://ssl': 'http://www'
-  }) + ".google-analytics.com/ga.js";
+  protocol = document.location.protocol === 'https:' ? 'https://ssl' : 'http://www';
+
+  s.src = protocol + ".google-analytics.com/ga.js";
 
   document.getElementsByTagName("head")[0].appendChild(s);
 
