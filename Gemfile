@@ -12,4 +12,9 @@ group :development do
   gem 'rb-fchange'
   gem 'rb-fsevent'
   gem 'rake'
+
+  gem 'guard-puma'
+  gem 'guard-jekyll'
+  gem 'guard-compass'
+  gem 'guard-coffeescript'
 end
