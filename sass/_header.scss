@@ -1,20 +1,31 @@
 header.navigation {
   width: 100%;
-  background: #632739;
-  border-top: 5px solid #CDD071;
+  background: #D0D1BE;
+  border-top: 5px solid #632739;
+  border-bottom: 5px solid #E4E5D3;
+
   h1 {
-    color: #fff;
-    font-family: 'Goudy Bookletter 1911', serif;
     margin: 0.5em 0;
+    display: block;
+
     a {
       text-decoration: none;
-      color: #fff;
-    }
-  }
+      color: #327C88;
 
-  .social {
-    a {
+      span {
+        font-family: 'Goudy Bookletter 1911', serif;
+      }
+    }
+
+    .social {
       float: right;
+      text-align: right;
+
+      a {
+        font-family: 'SocialicoRegular';
+        font-size: 150%;
+        padding-left: 10px;
+      }
     }
   }
 }

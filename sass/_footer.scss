@@ -1,15 +1,27 @@
-.foot {
-  border-top: #cccccc solid 1px;
-  nav {
-    float: right;
-    ul {
-      list-style: none;
-      float: right;
-      li {
-        margin-right: 20px;
-        font-size: 14px;
-        float: left;
-      }
+footer[role="about"] {
+  padding: 15px 0 0 0;
+  font-size: 12px;
+  border-top: 1px solid #ddd;
+
+  nav ul {
+    margin: 0 0 9px 0px;
+
+    li {
+      display: inline;
+      margin: 0 10px 0 0;
+      padding: 0 10px 0 0;
+      border-right: 1px solid #ccc;
     }
+
+    li:last-child {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+  }
+
+  p {
+    margin: 10px 0;
   }
 }
