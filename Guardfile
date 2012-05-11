@@ -12,6 +12,7 @@ guard 'jekyll' do
   watch(%r{^(atom|sitemap)\.xml})
   watch(%r{^_includes\/(.*)})
   watch(%r{^_layouts\/(.*)})
+  watch(%r{^_plugins\/(.*)\.rb})
   watch(%r{^(javascripts|fonts|stylesheets)\/.*})
 end
 
