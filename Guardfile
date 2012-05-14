@@ -13,6 +13,7 @@ guard 'jekyll' do
   watch(%r{^_includes\/(.*)})
   watch(%r{^_layouts\/(.*)})
   watch(%r{^_plugins\/(.*)\.rb})
+  watch(%r{^_posts\/(.*)\.markdown})
   watch(%r{^(javascripts|fonts|stylesheets)\/.*})
 end
 
