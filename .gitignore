@@ -1,4 +1,4 @@
-_gist_cache
+.gist-cache
 _site/*
 .sass-cache
 public
