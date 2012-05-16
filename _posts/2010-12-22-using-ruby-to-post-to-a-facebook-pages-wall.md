@@ -1,9 +1,8 @@
---- 
+---
 layout: post
 title: Using Ruby to post to a Facebook Page's wall
-wordpress_id: 154
-wordpress_url: http://www.beforeitwasround.com/?p=154
 ---
+
 I was recently tasked with what seemed like a fairly simple request: Post to a Facebook Page via the Facebook API.  This proved to be no small feat.  I've decided to document my steps here to serve as a help to others, and a reminder to myself should I ever need to revisit this in the future.
 
 Why was this so hard, you ask?  For starters, Facebook's documentation is particularly lacking.  Most of the documentation leads one to believe it's really only good for reading from the API.  It's difficult to understand how you can create anything.  Further muddying the waters is the amount of irrelevant information out there since the release of the Graph API.  They've changed their product so much is such a short period of time that it's hard to tell what's relevant and what isn't.  Many tutorials you'll find won't work because they speak to the old REST API that is now deprecated.  In other words, separating old from new is a bit of a needle/haystack problem.
@@ -39,30 +38,11 @@ Make sure to record the access token.  Armed with that, you can now make authent
 
 With Mogli, we can very easily obtain a client that we'll use to engage with the API:
 
-<code><pre>
-access_token = 'my_facebook_access_token'
-page_id = 'my_facebook_page_id'
-
-client = Mogli::Client.new(access_token)
-user = Mogli::User.find("me",client)
-page = user.accounts.select { |account| account.id.to_s == page_id }.first
-page = Mogli::Page.new(:access_token => page.access_token)
-page.client_for_page
-</pre></code>
+{% gist 761300 mogli_page_client.rb ruby %}
 
 user.accounts will return an array of accounts which will list any pages and apps you own.  I added a select because we want to manage a specific page so we need to retrieve the page based on the page_id.  Then we use that page's access token to create a new facebook client that we can use to work on behalf of the page.  Now, we just need to use the client to create our wall post:
 
-<code><pre>
-post_data = {}
-post_data[:name]    = 'Title for my link'
-post_data[:link]    = 'http://path.to/my/link'
-post_data[:caption] = 'A caption'
-post_data[:description] = 'A description'
-post_data[:picture] = 'http://path.to/myimage.jpg'
-post_data[:actions] = { :name => 'My site name', :link => 'http://link.to/my/site'}.to_json
-
-client.post("feed", nil, post_data)
-</pre></code>
+{% gist 761300 content_post.rb ruby %}
 
 What I've demonstrated above is a use-case where you'd post a link with a thumbnail image.  Facebook specifies quite a few other things that you can include with your [post](http://developers.facebook.com/docs/reference/api/post).  A few things are not relevant to page publishing, for instance you cannot set privacy on a page's wall post as it's visible to all people that like that page.  
 
