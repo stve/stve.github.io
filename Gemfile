@@ -2,6 +2,7 @@ source :rubygems
 
 gem 'jekyll'
 gem 'redcarpet'
+gem 'pygments.rb'
 gem 'rack-contrib'
 gem 'rack-rewrite'
 
