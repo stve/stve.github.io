@@ -12,6 +12,17 @@ layout: nil
     <priority>1.0</priority>
   </url>
 
+  {% for page in site.pages %}
+  {% unless site.sitemap_exclude contains page.url %}
+  <url>
+    <loc>{{ site.url }}{{ page.url }}</loc>
+    <lastmod>{{ site.time }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  {% endunless %}
+  {% endfor %}
+
   {% for post in site.posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
