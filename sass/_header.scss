@@ -1,32 +1,42 @@
+@mixin header-link-base {
+  a {
+    text-decoration: none;
+    color: #327C88;
+  }
+}
+
 header.navigation {
-  width: 100%;
   background: #D0D1BE;
-  border-top: 5px solid #632739;
+  border-top: 10px solid #632739;
   border-bottom: 5px solid #E4E5D3;
 
   h1 {
     margin: 0.5em 0;
-    display: block;
+    display: inline-block;
+    float: left;
 
     a {
-      text-decoration: none;
-      color: #327C88;
-
       span {
         font-family: 'Goudy Bookletter 1911', serif;
       }
     }
 
-    .social {
-      float: right;
-      text-align: right;
+    @include header-link-base;
+  }
 
-      a {
-        font-family: 'SocialicoRegular';
-        font-size: 150%;
-        padding-left: 10px;
-      }
+  .social {
+    float: right;
+    text-align: right;
+    margin-top: 25px;
+    font-size: 30px;
+
+    a {
+      font-family: 'SocialicoRegular';
+      font-size: 150%;
+      padding-left: 10px;
     }
+
+    @include header-link-base;
   }
 }
 
