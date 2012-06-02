@@ -33,12 +33,21 @@ article aside {
 
 article p {
   margin: 0 0 20px 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   color: #666;
 }
 
 article footer {
-  font-size: 14px;
+  font-size: 12px;
   color: #999;
+}
+
+#related {
+  margin: 48px 0;
+
+  ul {
+    list-style-type: none;
+    margin: 0 0 9px 0;
+  }
 }

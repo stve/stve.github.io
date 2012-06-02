@@ -1,19 +1,40 @@
 ---
 layout: default
 ---
+
 <div id="post">
-{{ content }}
+  <section>
+    <article>
+      <header>
+        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+      </header>
+
+      <aside>
+        {{ page.date | date_to_string }}
+
+        {% if aside %}
+          <p>{{ aside }}</p>
+        {% endif %}
+      </aside>
+
+      {{ content}}
+
+        <!--
+        <footer>
+          {{ date | date_to_string }}
+        </footer>
+      -->
+
+        <div id="boastful" class="well"></div>
+
+        <div id="related">
+          <h5>Other things I've written that might be related:</h5>
+          <ul class="posts">
+            {% for post in site.related_posts limit:3 %}
+              <li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+  </section>
 </div>
-
-disqus
-
-<div id="related">
-  <h2>Related Posts</h2>
-  <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-
-<div id="boastful"></div>

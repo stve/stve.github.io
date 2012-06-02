@@ -38,24 +38,12 @@
 
     <div class="row-fluid">
       <div class="span8">
-        {% if page.title %}
-          <h2>{{ page.title }}</h2>
-        {% endif %}
-
         {{ content }}
       </div>
 
       <div class="span4">
-        <h4>Getting Started</h4>
-
-        <p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-        <h4 class="twitter"><span style="font-family: 'SocialicoRegular';">l</span> @anno</h4>
-
-        <div class="tweet"></div>
-
-        <a href="https://twitter.com/anno" class="twitter-follow-button" data-show-count="false">Follow @anno</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        {% include aboutme.html %}
+        {% include tweets.html %}
       </div>
     </div>
 
