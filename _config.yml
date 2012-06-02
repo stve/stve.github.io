@@ -24,7 +24,23 @@ author: Steve Agalloco
 email: steve.agalloco@gmail.com
 
 description: before it was round
-keywords: "agalloco, steve agalloco, steve, ruby, rails, eventmachine, github, tophat, airbrake, tweetstream, twitter, charlotte, fanzter, coolspotters"
+keywords:
+  - agalloco
+  - steve agalloco
+  - steve,
+  - ruby
+  - rails
+  - jruby
+  - sinatra
+  - eventmachine
+  - github
+  - tophat
+  - airbrake
+  - tweetstream
+  - twitter
+  - charlotte
+  - fanzter
+  - coolspotters
 
 sitemap_exclude:
   - /sitemap.xml
