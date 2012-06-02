@@ -30,3 +30,4 @@ sitemap_exclude:
   - /sitemap.xml
   - /atom.xml
   - /index.html
+  - /404.html
