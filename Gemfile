@@ -7,7 +7,6 @@ gem 'rack-contrib'
 gem 'rack-rewrite'
 
 group :development do
-  gem 'foreman'
   gem 'compass'
   gem 'bootstrap-sass'
   gem 'rb-fchange'
