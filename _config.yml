@@ -1,6 +1,11 @@
 permalink: /:year/:month/:title.html
-markdown: redcarpet
+markdown: rdiscount
 pygments: true
+safe: true
+lsi: false
+
+rdiscount:
+  extensions: []
 
 exclude:
   - CNAME
