@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Animal Crackers
-wordpress_id: 4
-wordpress_url: http://www.beforeitwasround.com/2003/09/08/animal-crackers/
+published: false
 ---
 I almost didn't give blood today.  I've never given blood before and was pretty uneasy about it.  Ever since high school when I was first exposed to blood drives, I have avoided them.  I don't really like anything having to do with vials, needles, rubber gloves, etc.
 

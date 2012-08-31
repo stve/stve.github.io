@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Outta Here
-wordpress_id: 98
-wordpress_url: http://www.beforeitwasround.com/?p=98
+published: false
 ---
 New production from Marc Mac.  I really dig this beat.  Rumor has it that Marc is working on a new <a href="http://www.myspace.com/visioneers">Visioneers</a> album.  I could see a tune like this easily fitting in although I'm not sure where/when this is going to be released.  Also, check out this cool video for <a href="http://vimeo.com/4189528?sec=&hd=1">Let The Music Build</a> - it was recorded in one take!
 

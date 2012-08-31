@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Mind Playing Tricks On Me
-wordpress_id: 97
-wordpress_url: http://www.beforeitwasround.com/2009/04/15/mind-playing-tricks-on-me/
+published: false
 ---
 An oldie but a goodie.  I heard this on the radio on my way into work this morning.  I've always loved this song, sounds fresh almost 15 years after it was released.
 

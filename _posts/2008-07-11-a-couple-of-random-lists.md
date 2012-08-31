@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: A couple of random lists
-wordpress_id: 66
-wordpress_url: http://www.beforeitwasround.com/2008/07/11/a-couple-of-random-lists/
+published: false
 ---
 <strong>Movies I've Seen this year (and mini reviews to go with them)</strong>
 

@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Kseniya Simonova
-wordpress_id: 123
-wordpress_url: http://www.beforeitwasround.com/?p=123
+published: false
 ---
 Been a little while since I've posted here, a friend sent this on today and it's absolutely mesmerizing.  Enjoy it.
 

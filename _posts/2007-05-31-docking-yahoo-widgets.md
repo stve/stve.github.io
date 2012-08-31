@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: Docking Yahoo Widgets
-wordpress_id: 59
-wordpress_url: http://www.beforeitwasround.com/2007/05/31/docking-yahoo-widgets/
+published: false
 ---
+
 I use <a href="http://widgets.yahoo.com">Yahoo! Widgets</a> on my desktop on both my work and home computers.  They're not the most useful, but I like having quick access to weather and other things.  On my laptop, it's useful to see connection strength, battery life, etc.  Yahoo Widgets has updated several times recently and a new feature is the Dock.  It's quite similar to the Apple OS X Dock, but not as useful, basically it's an easy way to open or close a widget.
 
 <img src="/_images/yahoo_widget_dock.gif" alt="Yahoo! Widgets Dock" />

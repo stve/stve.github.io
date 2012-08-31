@@ -1,9 +1,8 @@
---- 
+---
 layout: post
 title: Stay Hungry, Stay Foolish
-wordpress_id: 60
-wordpress_url: http://www.beforeitwasround.com/2007/06/06/stay-hungry-stay-foolish/
 ---
+
 "You have to trust that the dots will connect." - <a href="http://www.youtube.com/watch?v=D1R-jKKp3NA">Steve Jobs</a>
 
 I'm quite busy at the moment but I'm attempting to keep things rolling along here.  Here are a few other things that I've enjoyed and noticed lately:

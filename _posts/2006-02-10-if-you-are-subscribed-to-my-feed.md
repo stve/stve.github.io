@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: If you are subscribed to my feed
-wordpress_id: 14
-wordpress_url: http://www.beforeitwasround.com/2006/02/10/if-you-are-subscribed-to-my-feed/
+published: false
 ---
 Which you probably are not, please excuse the mess, I'm pulling over my entries from movabletype.
 

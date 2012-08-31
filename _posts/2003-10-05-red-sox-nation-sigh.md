@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Red Sox Nation (sigh)
-wordpress_id: 10
-wordpress_url: http://www.beforeitwasround.com/2003/10/05/red-sox-nation-sigh/
+published: false
 ---
 The city is charged up by the Red Sox right now.  They adore their beloved Red Sox.  Last night's extra-inning win really got things going.  Immediately, the bartenders knew it was going to be a busy night.  As soon as the winning home run was hit, the bar we were at just erupted. I just sat in my chair.
 

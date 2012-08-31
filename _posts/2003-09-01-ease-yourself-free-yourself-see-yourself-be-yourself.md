@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Ease Yourself, Free Yourself, See Yourself, Be Yourself
-wordpress_id: 6
-wordpress_url: http://www.beforeitwasround.com/2003/09/01/ease-yourself-free-yourself-see-yourself-be-yourself/
+published: false
 ---
 This weekend, in search of something new to do, we decided to go to the <a href="http://www.hob.com/venues/clubvenues/cambridge/">House of Blues</a> in Harvard Square.  I had never been, even though I've probably walked by it a hundred times.
 

@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: A few more nevers
-wordpress_id: 58
-wordpress_url: http://www.beforeitwasround.com/2007/05/20/a-few-more-nevers/
+published: false
 ---
 It's amazing what a day out in public will do.  Here's a few more <a href="http://www.beforeitwasround.com/2007/05/16/never-say-never/" title="Never Say Never">nevers</a> to add to the list:
 

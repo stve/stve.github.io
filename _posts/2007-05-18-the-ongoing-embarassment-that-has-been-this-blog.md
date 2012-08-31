@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: The ongoing embarassment that has been this blog
-wordpress_id: 39
-wordpress_url: http://www.beforeitwasround.com/2007/05/18/the-ongoing-embarassment-that-has-been-this-blog/
+published: false
 ---
 In early 2006, I put my goals together for the year.  Among them was this nugget, "Complete blog design and consistently blog approximately once per week, stretch goal is 2-3 times per week"  Subtract my two recent posts, and I'd say that I've failed miserably in both regards.  Up until recently I was still using the default wordpress theme and my blogging output (or lack thereof) has been equally pathetic.  Not that this goal should feel neglected, I just wasn't able to get to all that many of them this year for one reason or another.  And so it goes, year after year, I'm finding this to be the case.  So, for you few readers out there, I thought it might be worth putting together a little history of the past few years and why I haven't done anything with this poor site.
 

@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Music Tuesday
-wordpress_id: 80
-wordpress_url: http://www.beforeitwasround.com/?p=80
+published: false
 ---
 Ok, so this video is pretty lame, but I absolutely love this song off the new <a href="http://www.jazzanova.net">Jazzanova</a> album.  That's <a href="http://www.myspace.com/prandolph">Paul Randolph</a> on the vocals whom I first heard on the <a href="http://www.sonarkollektiv.com/artists/ISoul8/">Isoul8</a> album (which I also really like).
 

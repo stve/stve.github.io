@@ -1,12 +1,11 @@
---- 
+---
 layout: post
 title: Concerts I've been to
-wordpress_id: 67
-wordpress_url: http://www.beforeitwasround.com/2008/07/14/concerts-ive-been-to/
+published: false
 ---
 <em>Continuing on with lists.  I know these are lame blog posts, but it's helping me get my writing ability back, and it's also basically all that I have time for at the moment.</em>
 
-In no particular order (an * denotes that I've seen them multiple times).  For the most part I've excluded opening acts unless they were noteworthy.  I'm also excluding some bands I might have seen at festivals like the Horde Festival or Lollapalooza.  
+In no particular order (an * denotes that I've seen them multiple times).  For the most part I've excluded opening acts unless they were noteworthy.  I'm also excluding some bands I might have seen at festivals like the Horde Festival or Lollapalooza.
 
 Phish*
 Blues Traveler*

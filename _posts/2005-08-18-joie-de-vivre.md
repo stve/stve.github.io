@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Joie de Vivre
-wordpress_id: 30
-wordpress_url: http://www.beforeitwasround.com/2006/03/05/joie-de-vivre/
+published: false
 ---
 I found this article on <a title="peterme" href="http://www.peterme.com">Peter's site</a>: <a title=" On the Record: Chip Conley" href="http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2005/08/07/BUGSFE1OF51.DTL"> On the Record: Chip Conley</a>
 

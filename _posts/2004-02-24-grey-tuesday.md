@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Grey Tuesday
-wordpress_id: 17
-wordpress_url: http://www.beforeitwasround.com/2004/02/24/grey-tuesday/
+published: false
 ---
 Today is <a href="http://www.greytuesday.org">Grey Tuesday</a>.  I would change the colors of my site to grey, but it's too much of a pain in the ass and I just can't be bothered.  I downloaded the Grey Album off of <a href="http://www.illegal-art.org/audio/grey.html">Illegal Art</a>, I recommend you do the same.
 

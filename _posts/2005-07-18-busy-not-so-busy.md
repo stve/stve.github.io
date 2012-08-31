@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Busy / Not So Busy
-wordpress_id: 21
-wordpress_url: http://www.beforeitwasround.com/2005/07/18/busy-not-so-busy/
+published: false
 ---
 <p>Uh, I guess I like duality in my blog titles.</p>
 <p>What an odd weekend that was.  We're heading out on a two week vacation later in the month so this was a weekend where we planned on taking it easy to save some money.</p>

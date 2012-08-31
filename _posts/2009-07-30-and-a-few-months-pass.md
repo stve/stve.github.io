@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: And a few months pass...
-wordpress_id: 100
-wordpress_url: http://www.beforeitwasround.com/2009/07/30/and-a-few-months-pass/
+published: false
 ---
 Well, this blog had a good run for a while.  I was posting links to new music I was digging and then all of a sudden it ground to a screeching halt again.  What gives?  Well, things got a little hectic around here for a bit.  We undertook a home renovation project, I started working on a new project at work among a few other things I won't get into here.  Most of this summer has been spent scurrying here and there in between the chaos.
 

@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Happy Birthday Bill Murray?
-wordpress_id: 31
-wordpress_url: http://www.beforeitwasround.com/2006/03/05/happy-birthday-bill-murray/
+published: false
 ---
 <img width="409" height="412" alt="Bill Murray as Steve Zissou" class="photo" src="/_images/billmurray.jpg" />
 

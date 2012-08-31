@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Welcome Back
-wordpress_id: 11
-wordpress_url: http://www.beforeitwasround.com/2004/01/14/welcome-back/
+published: false
 ---
 Well that was quite a hiatus wasn't it?  I got pulled onto a huge train wreck of a project at work back in October and we just launched last week.  I spent a good majority of the last couple of months traveling back and forth between New Jersey and Boston.
 

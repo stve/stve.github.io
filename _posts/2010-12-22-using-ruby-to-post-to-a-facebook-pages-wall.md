@@ -7,7 +7,7 @@ I was recently tasked with what seemed like a fairly simple request: Post to a F
 
 Why was this so hard, you ask?  For starters, Facebook's documentation is particularly lacking.  Most of the documentation leads one to believe it's really only good for reading from the API.  It's difficult to understand how you can create anything.  Further muddying the waters is the amount of irrelevant information out there since the release of the Graph API.  They've changed their product so much is such a short period of time that it's hard to tell what's relevant and what isn't.  Many tutorials you'll find won't work because they speak to the old REST API that is now deprecated.  In other words, separating old from new is a bit of a needle/haystack problem.
 
-So where to start, first read up on Facebook API [authentication](http://developers.facebook.com/docs/authentication/).  So we're going to authenticate via OAuth and once authenticated, make calls against the API.  But how do we do this as a page instead of as ourself?  Facebook devotes 2 paragraphs to it in their [documentation](http://developers.facebook.com/docs/api) under a section titled "Page impersonation".  I highly recommend you read it, especially this: <em>"Once a user has granted your application the "manage_pages" permission, the "accounts" connection will yield an additional access_token property for every page administrated by the current user. These access_tokens can be used to make calls on behalf of a page. The permissions granted by a user to your application will now also be applicable to their pages."</em>
+So where to start, first read up on Facebook API [authentication](http://developers.facebook.com/docs/authentication/).  So we're going to authenticate via OAuth and once authenticated, make calls against the API.  But how do we do this as a page instead of as ourself?  Facebook devotes 2 paragraphs to it in their [documentation](http://developers.facebook.com/docs/api) under a section titled "Page impersonation".  I highly recommend you read it, especially this: *"Once a user has granted your application the "manage_pages" permission, the "accounts" connection will yield an additional access_token property for every page administrated by the current user. These access_tokens can be used to make calls on behalf of a page. The permissions granted by a user to your application will now also be applicable to their pages."*
 
 They've laid it out for us:
 
@@ -49,7 +49,7 @@ page = Mogli::Page.new(:access_token => page.access_token)
 page_client = page.client_for_page
 {% endhighlight %}
 
-user.accounts will return an array of accounts which will list any pages and apps you own.  I added a select because we want to manage a specific page so we need to retrieve the page based on the page_id.  Then we use that page's access token to create a new facebook client that we can use to work on behalf of the page.  Now, we just need to use the client to create our wall post:
+`user.accounts` will return an array of accounts which will list any pages and apps you own.  I added a select because we want to manage a specific page so we need to retrieve the page based on the page_id.  Then we use that page's access token to create a new facebook client that we can use to work on behalf of the page.  Now, we just need to use the client to create our wall post:
 
 {% highlight ruby %}
 post_data = {}
@@ -69,6 +69,6 @@ client.post("feed", nil, post_data)
 
 What I've demonstrated above is a use-case where you'd post a link with a thumbnail image.  Facebook specifies quite a few other things that you can include with your [post](http://developers.facebook.com/docs/reference/api/post).  A few things are not relevant to page publishing, for instance you cannot set privacy on a page's wall post as it's visible to all people that like that page.
 
-Mogli does include a Mogli::Post class but I wasn't able to get it to work without getting an error response from the API.  Fortunately it also supports passing a simple hash of attributes.  Notice that I'm serializing the actions hash to JSON before passing it to the hash.  That threw me for a real loop, but Facebook very literally wants JSON objects passed as strings.
+Mogli does include a `Mogli::Post` class but I wasn't able to get it to work without getting an error response from the API.  Fortunately it also supports passing a simple hash of attributes.  Notice that I'm serializing the actions hash to JSON before passing it to the hash.  That threw me for a real loop, but Facebook very literally wants JSON objects passed as strings.
 
 Executing the above code should result in your post appearing on your pages wall.  Congratulations - you made it.  Happy wall posting!

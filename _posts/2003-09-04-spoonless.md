@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Spoonless
-wordpress_id: 7
-wordpress_url: http://www.beforeitwasround.com/2003/09/04/spoonless/
+published: false
 ---
 I just ate a Jello Pudding Snack with a fork.  Believe it or not, but a fork is an effective way of eating a Jello Pudding Snack.  It's not exactly "lick it clean" clean, but I managed to get most of the pudding out of that little tub.  I didn't have to resort to using my finger.
 

@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Random NYC photos
-wordpress_id: 15
-wordpress_url: http://www.beforeitwasround.com/2004/02/18/random-nyc-photos/
+published: false
 ---
 Taken while I was in NYC this past September.  I've been very busy working on a CMS system for <a href="http://www.orangeapple.com">orangeapple</a>, I haven't really had much time to focus on this poor website of mine.
 <p class="photo"><img width="510" height="313" alt="A winebar in the village" src="/_images/winebar.jpg" /></p>

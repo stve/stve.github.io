@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Boston Skyline
-wordpress_id: 9
-wordpress_url: http://www.beforeitwasround.com/2006/09/22/boston-skyline/
+published: false
 ---
 One of our friends has a roof deck in Beacon Hill and we've spent a lot of nights up there recently.  She probably has one of the best views in all of Boston.  Last week I remembered to take my camera to take some pics.
 <p class="centerPhoto"><a href="/_images/bostonskylinestitch.jpg"><img width="360" height="270" border="0" class="photo" alt="Boston Skyline" src="/_images/skyline.jpg" /></a></p>

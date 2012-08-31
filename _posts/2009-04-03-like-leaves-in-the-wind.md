@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Like Leaves In The Wind
-wordpress_id: 92
-wordpress_url: http://www.beforeitwasround.com/?p=92
+published: false
 ---
 I swear one day I'll post something other than youtube videos here but for the time being, it's better than nothing.  I have actually been toying with redesigning this site while i'm at it, possibly using <a href="http://aaronweyenberg.com/">Aaron's</a> Green Tea theme.
 

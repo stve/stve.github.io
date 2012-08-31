@@ -1,8 +1,7 @@
---- 
+---
 layout: post
 title: Conflicting Feelings, You Gotta Do What You Feel
-wordpress_id: 27
-wordpress_url: http://www.beforeitwasround.com/2005/07/07/conflicting-feelings-you-gotta-do-what-you-feel/
+published: false
 ---
 My thoughts and prayers are with those in London.
 
