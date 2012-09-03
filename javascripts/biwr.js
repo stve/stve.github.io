@@ -22,7 +22,6 @@
   document.getElementsByTagName("head")[0].appendChild(s);
 
   $(document).ready(function() {
-    $('#boastful').boastful();
     $(".tweet").tweet({
       join_text: "auto",
       username: "anno",

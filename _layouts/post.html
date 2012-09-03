@@ -25,16 +25,14 @@ layout: default
         </footer>
       -->
 
-        <div id="boastful" class="well"></div>
-
-        <div id="related">
-          <h5>Other things I've written that might be related:</h5>
-          <ul class="posts">
-            {% for post in site.related_posts limit:3 %}
-              <li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </article>
+      <div id="related">
+        <h5>Other things I've written that might be related:</h5>
+        <ul class="posts">
+          {% for post in site.related_posts limit:3 %}
+            <li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </article>
   </section>
 </div>

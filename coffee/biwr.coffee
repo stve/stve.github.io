@@ -12,7 +12,6 @@ document.getElementsByTagName("head")[0].appendChild(s)
 
 
 $(document).ready ->
-  $('#boastful').boastful()
   $(".tweet").tweet({
     join_text: "auto",
     username: "anno",
