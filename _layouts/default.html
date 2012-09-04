@@ -8,16 +8,13 @@
 
   <link rel="icon" type="image/x-icon" href="/favicon.png" />
 
-  <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.title }}</title>
+  <title>{% if page.title %} {{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join }}{% else %}{{ site.keywords | join }}{% endif %}" />
   <meta name="author" content="{{ site.author }}">
 
   <!-- Included CSS Files -->
-  <link rel="stylesheet" href="/stylesheets/calluna.css" type="text/css" />
-  <link rel="stylesheet" href="/stylesheets/ss-social.css" type="text/css" />
   <link rel="stylesheet" href="/stylesheets/styles.css" type="text/css" />
-  <link rel="stylesheet" href="/stylesheets/jquery.tweet.css" type="text/css" />
 
   <link href="//fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css" />
 

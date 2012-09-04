@@ -3,16 +3,24 @@
 
 @import "compass/css3";
 
+// fonts
+@import "sssocial";
+@import "calluna";
+
+// sections
 @import "header";
 @import "article";
 @import "footer";
 @import "sidebar";
 @import "pygments";
+@import "jquerytweet";
 
+// margin on all content
 div.main {
   margin-top: 15px;
 }
 
+// error pages
 div.error {
   margin: 120px 0px;
 }
