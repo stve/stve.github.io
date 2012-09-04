@@ -16,3 +16,20 @@ div.main {
 div.error {
   margin: 120px 0px;
 }
+
+ul.archives {
+  li {
+    span {
+      width: 80px;
+      display: inline-block;
+    }
+  }
+}
+
+h2 {
+  font-family: 'Calluna Regular', serif;
+  color: #46ADBE;
+  margin-bottom: 10px;
+
+  span { color: #632739; }
+}
