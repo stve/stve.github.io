@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Design with Whimzy
+published: false
 ---
 
 I'm a wine drinker so I was naturally curious to check out one of [Gary Vaynerchuk's](http://garyvaynerchuk.com/) new ventures: [Cinderella Wine](http://cinderellawine.com/).  The concept is simple, one wine is sold a day starting at midnight and the sale continues (often heavily discounted) until it's sold out.  One thing I really like about the site's design is what happens when the wine sells out, the photo of the wine bottle is replaced by a pumpkin.
