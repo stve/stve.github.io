@@ -14,7 +14,7 @@ guard 'jekyll' do
   watch(%r{^_layouts\/(.*)})
   watch(%r{^_plugins\/(.*)\.rb})
   watch(%r{^_posts\/(.*)\.(markdown|md)})
-  watch(%r{^(javascripts|fonts|stylesheets)\/.*})
+  watch(%r{^(javascripts|fonts|stylesheets|images)\/.*})
 end
 
 guard 'puma', :port => 4000 do
