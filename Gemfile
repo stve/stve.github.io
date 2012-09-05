@@ -5,7 +5,6 @@ gem 'jekyll', '0.11.0'
 gem 'rdiscount'
 gem 'pygments.rb'
 gem 'rack-contrib'
-gem 'rack-rewrite'
 
 group :development do
   gem 'compass'
