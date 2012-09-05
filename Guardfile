@@ -8,7 +8,7 @@ end
 
 guard 'jekyll' do
   watch('_config.yml')
-  watch(%r{^(index|about|archives|work|404|colophon)\.html})
+  watch(%r{^(index|about|archives|404|colophon)\.html})
   watch(%r{^(atom|sitemap)\.xml})
   watch(%r{^_includes\/(.*)})
   watch(%r{^_layouts\/(.*)})
