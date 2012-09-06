@@ -39,13 +39,17 @@ keywords:
   - sinatra
   - eventmachine
   - github
+  - rubygem
   - tophat
   - airbrake
   - tweetstream
   - twitter
   - charlotte
-  - fanzter
-  - coolspotters
+  - brokerage
+  - api
+  - finance
+  - quote
+  - options
 
 sitemap_exclude:
   - /sitemap.xml
