@@ -11,6 +11,10 @@ footer[role="about"] {
       margin: 0 10px 0 0;
       padding: 0 10px 0 0;
       border-right: 1px solid #ccc;
+
+      i.orange {
+        color: #FF9900;
+      }
     }
 
     li:last-child {
