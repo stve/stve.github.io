@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="shortcut icon" href="http://beforeitwasround.com/favicon.ico" />
   <link rel="icon" type="image/png" href="http://beforeitwasround.com/favicon.png" />
 
   <title>{% if page.title %} {{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join }}{% else %}{{ site.keywords | join }}{% endif %}" />
-  <meta name="author" content="{{ site.author }}">
+  <meta name="author" content="{{ site.author }}" />
 
   <!-- Included CSS Files -->
   <link rel="stylesheet" href="/stylesheets/styles.css" type="text/css" />
