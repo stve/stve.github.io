@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Fog With Private Rackspace Cloud Files
+title: Using CarrierWave and Fog With Private Rackspace Cloud Files
 published: true
 ---
 
