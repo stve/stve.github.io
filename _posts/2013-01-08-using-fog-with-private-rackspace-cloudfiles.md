@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Fog With Private Rackspace Cloud Files
-published: false
+published: true
 ---
 
 During a recent project, I used [Rackspace Cloud Files](http://www.rackspace.com/cloud/files/) (an S3 equivalent run by Rackspace) to store mp3 files. Since the files I was working with were attached to ActiveRecord models, I immediately turned to [CarrierWave](https://github.com/jnicklas/carrierwave).  CarrierWave makes this really easy, simply configure appropriately:
