@@ -1,4 +1,4 @@
-ignore_paths '_site', 'public'
+ignore '_site', 'public'
 
 guard 'coffeescript', :input => 'coffee', :output => 'javascripts'
 
