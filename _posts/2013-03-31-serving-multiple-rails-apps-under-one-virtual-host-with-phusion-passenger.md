@@ -42,3 +42,5 @@ ln -s /apps/app2/current/public app2
 {% endhighlight %}
 
 Depending upon your deployment strategy, you may need to create the symlink each time you deploy. I setup a symlink as part of the capistrano deploy and everything just worked&#8482;.
+
+**Bonus**: If you use a common datastore and session_store key within your Rails applications, you can share authentication between the two apps to create a cohesive "logged-in" interface.
