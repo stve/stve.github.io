@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'liquid', '2.2.2'
-gem 'jekyll', '0.11.0'
-gem 'rdiscount'
 gem 'pygments.rb'
 gem 'rack-contrib'
 
@@ -17,4 +14,6 @@ group :development do
   gem 'guard-jekyll'
   gem 'guard-compass'
   gem 'guard-coffeescript'
+
+  gem 'github-pages'
 end
