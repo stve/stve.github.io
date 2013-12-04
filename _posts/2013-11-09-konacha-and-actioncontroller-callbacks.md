@@ -16,26 +16,30 @@ At [Tradier](https://tradier.com), we are big fans of TDD. We're quite comfortab
 
 What's going on here? Konacha's `SpecsController` inherits from `ActionController::Base` so that it can render ERB templates and layouts which setup a browser environment to run the test suite. Pretty standard stuff for a Rails Engine. That brings us to PaperTrail and it's controller callbacks. By default, PaperTrail enables itself for all controllers, `SpecsController` included.  If we look at `user_for_paper_trail`, we see the following:
 
-    def user_for_paper_trail
-      current_user if defined?(current_user)
-    end
+{% highlight ruby %}
+def user_for_paper_trail
+  current_user if defined?(current_user)
+end
+{% endhighlight %}
 
 It's triggering `current_user` which invoked Devise, causing the exception above. Clearly, PaperTrail's user fingerprinting are interfering with Konacha. To fix this, we simply need to disable PaperTrail in the `SpecsController`. In addition to your Konacha configuration, you'll want to have something like this in `config/initializers/konacha.rb`:
 
-    if defined?(Konacha)
-      require 'capybara/poltergeist'
-      Konacha.configure do |config|
-        config.spec_dir    = "spec/javascripts"
-        config.driver      = :poltergeist
-        config.stylesheets = %w(application)
-      end
+{% highlight ruby %}
+if defined?(Konacha)
+  require 'capybara/poltergeist'
+  Konacha.configure do |config|
+    config.spec_dir    = "spec/javascripts"
+    config.driver      = :poltergeist
+    config.stylesheets = %w(application)
+  end
 
-      Konacha::SpecsController.class_eval do
-        def paper_trail_enabled_for_controller
-          false
-        end
-      end
+  Konacha::SpecsController.class_eval do
+    def paper_trail_enabled_for_controller
+      false
     end
+  end
+end
+{% endhighlight %}
 
 With that in place, our tests started to work again. Konacha and Mocha are a nice combination for testing JavaScript, be sure to check them out. Happy testing!
 
