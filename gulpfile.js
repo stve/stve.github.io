@@ -8,6 +8,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var clean = require('gulp-clean');
 var compass = require('gulp-compass');
+var minify = require('gulp-minify-css');
 
 gulp.task('lint', function() {
     gulp.src('./src/js/*.js')
@@ -34,7 +35,8 @@ gulp.task('sass', function() {
             sass: 'src/scss',
             image: 'images'
         }))
-        .pipe(gulp.dest('/tmp'));
+        .pipe(minify({}))
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('scripts', function() {

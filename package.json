@@ -8,6 +8,7 @@
     "gulp-jshint": "~1.4.0",
     "gulp-sass": "~0.6.0",
     "gulp-clean": "~0.2.4",
-    "gulp-compass": "~1.1.2"
+    "gulp-compass": "~1.1.2",
+    "gulp-minify-css": "~0.3.0"
   }
 }
