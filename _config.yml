@@ -18,7 +18,10 @@ exclude:
   - js
   - css
   - src
+  - design
+  - script
   - _drafts
+  - build
 
 title: flat
 url: http://beforeitwasround.com
@@ -48,6 +51,8 @@ keywords:
   - finance
   - quote
   - options
+  - tradier
+  - fintech
 
 sitemap_exclude:
   - /sitemap.xml
