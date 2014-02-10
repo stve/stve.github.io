@@ -12,14 +12,12 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - Procfile
   - Guardfile
   - config.rb
-  - sass
-  - config.ru
-  - coffee
   - vendor
-  - tmp
+  - js
+  - css
+  - src
   - _drafts
 
 title: flat
