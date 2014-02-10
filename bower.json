@@ -1,0 +1,24 @@
+{
+  "name": "beforeitwasround",
+  "description": "Assets and dependencies for beforeitwasround.com",
+  "version": "0.0.0",
+  "homepage": "http://beforeitwasround.com",
+  "authors": [
+    "Steve Agalloco <steve.agalloco@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.0",
+    "gridism": "~0.1.0",
+    "html5shiv": "~3.7.0",
+    "symbolset-js": "~0.1.0"
+  }
+}
