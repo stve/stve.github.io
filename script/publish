@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+  echo "Usage: provide a path to a draft article."
+  exit -1
+else
+  title=$(basename $@)
+fi
+
+d=$(date +"%Y-%m-%d")
+post="./_posts/$d-$title"
+
+cp $@ $post
+
+# sed -i 's/published\:\sfalse/published\:\strue/' $post
