@@ -21,7 +21,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-    gulp.src('./js')
+    gulp.src('./js', {read: false})
         .pipe(clean());
 
     gulp.src('./src/js/*.js')
