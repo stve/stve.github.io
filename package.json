@@ -7,7 +7,7 @@
     "gulp-uglify": "~0.2.1",
     "gulp-jshint": "~1.4.0",
     "gulp-sass": "~0.6.0",
-    "gulp-coffee": "~1.4.1",
-    "gulp-clean": "~0.2.4"
+    "gulp-clean": "~0.2.4",
+    "gulp-compass": "~1.1.2"
   }
 }

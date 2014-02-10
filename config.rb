@@ -1,10 +1,10 @@
 require 'bootstrap-sass'
 
 http_path       = "/"
-css_dir         = "stylesheets"
-sass_dir        = "sass"
+css_dir         = "css"
+sass_dir        = "src/scss"
 images_dir      = "images"
-javascripts_dir = "javascripts"
+javascripts_dir = "js"
 
 output_style    = :compressed
 sass_options    = { :syntax => :scss }
