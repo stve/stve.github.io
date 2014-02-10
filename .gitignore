@@ -3,3 +3,4 @@ _site/*
 public
 tmp/*
 vendor/*
+node_modules/*

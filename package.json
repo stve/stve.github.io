@@ -1,0 +1,13 @@
+{
+  "name": "beforeitwasround",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-concat": "~2.1.7",
+    "gulp-rename": "~1.0.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-jshint": "~1.4.0",
+    "gulp-sass": "~0.6.0",
+    "gulp-coffee": "~1.4.1",
+    "gulp-clean": "~0.2.4"
+  }
+}
