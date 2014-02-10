@@ -2,5 +2,7 @@ _site/*
 .sass-cache
 public
 tmp/*
-vendor/*
+css/*
+js/*
+build/*
 node_modules/*
