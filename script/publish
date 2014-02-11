@@ -10,6 +10,6 @@ fi
 d=$(date +"%Y-%m-%d")
 post="./_posts/$d-$title"
 
-cp $@ $post
+mv $@ $post
 
 # sed -i 's/published\:\sfalse/published\:\strue/' $post
