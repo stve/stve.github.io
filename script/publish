@@ -12,4 +12,3 @@ post="./_posts/$d-$title"
 
 mv $@ $post
 
-# sed -i 's/published\:\sfalse/published\:\strue/' $post

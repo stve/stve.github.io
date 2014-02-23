@@ -16,7 +16,7 @@ read -d '' body <<EOF
 ---
 layout: post
 title: $title
-published: false
+published: true
 categories:
   -
 ---
