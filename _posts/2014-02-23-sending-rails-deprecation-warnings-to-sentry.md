@@ -9,7 +9,7 @@ categories:
 
 If you've upgraded a Rails app recently, you are no stranger to deprecation warnings. As I've been going through some of our apps (most of which were running 3.2) and upgrading them, I've wanted a way to get notified of these warnings without having to scan the logs.
 
-We use [Sentry](https://getsentry.com) to manage our exception handling, so I figured there must be a way to handle these warnings just like exceptions.  Since I had to read a little bit of Rails code to figure this out, I figured I'd share what I learned.  ActiveSupport allows you to define one or more deprecation behaviors by using  [`ActiveSupport::Deprecation.behavior=`](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/deprecation/behaviors.rb#L46-L48). Several options are included by default:
+We use [Sentry](https://getsentry.com) to manage our exception handling, so I figured there must be a way to handle these warnings just like exceptions.  Since I had to read a little bit of Rails code to figure this out, I figured I'd share what I learned.  ActiveSupport allows you to define one or more deprecation behaviors by using  [`ActiveSupport::Deprecation.behavior=`](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/deprecation/behaviors.rb#L71-L73). Several options are included by default:
 
 * `:raise` - raise an exception instead of warning
 * `:stderr` - log them to `$stderr`
