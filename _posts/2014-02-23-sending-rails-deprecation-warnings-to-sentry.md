@@ -21,13 +21,13 @@ Based on the [documentation](http://api.rubyonrails.org/classes/ActiveSupport/De
 
 {% highlight ruby %}
 def warn(message = nil, callstack = nil)
-   return if silenced
+  return if silenced
 
   callstack ||= caller(2)
   deprecation_message(callstack, message).tap do |m|
     behavior.each { |b| b.call(m, callstack) }
   end
- end
+end
 {% endhighlight %}
 
 By default, Rails uses `:stderr`. I wanted to keep that behavior, but also include  Sentry. ActiveSupport Notifications are a perfect way to do that. Using the raven gem to hook into Sentry, here's where I landed:
