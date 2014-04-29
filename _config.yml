@@ -7,6 +7,9 @@ lsi: false
 rdiscount:
   extensions: []
 
+gems:
+  - jekyll-sitemap
+
 exclude:
   - CNAME
   - README.md
@@ -22,6 +25,8 @@ exclude:
   - script
   - _drafts
   - build
+  - node_modules
+  - bower_components
 
 title: flat
 url: http://beforeitwasround.com
@@ -53,9 +58,3 @@ keywords:
   - options
   - tradier
   - fintech
-
-sitemap_exclude:
-  - /sitemap.xml
-  - /atom.xml
-  - /index.html
-  - /404.html

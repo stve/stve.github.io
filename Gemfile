@@ -6,4 +6,5 @@ group :development do
   # gem 'guard-jekyll'
 
   gem 'github-pages'
+  gem 'jekyll-sitemap'
 end
