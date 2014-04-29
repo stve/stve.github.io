@@ -27,6 +27,9 @@ exclude:
   - build
   - node_modules
   - bower_components
+  - gulpfile.js
+  - bower.json
+  - package.json
 
 title: flat
 url: http://beforeitwasround.com
