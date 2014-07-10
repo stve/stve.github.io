@@ -1,5 +1,5 @@
 permalink: /:year/:month/:title.html
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 
 gems:
