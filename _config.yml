@@ -1,7 +1,6 @@
 permalink: /:year/:month/:title.html
 markdown: redcarpet
 pygments: true
-lsi: false
 
 gems:
   - jekyll-sitemap
