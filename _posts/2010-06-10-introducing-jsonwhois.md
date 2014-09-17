@@ -25,4 +25,4 @@ else
 end
 {% endhighlight %}
 
-The code is up on [github](http://github.com/spagalloco/jsonwhois) if anyone want to look under the covers.
+The code is up on [github](http://github.com/stve/jsonwhois) if anyone want to look under the covers.
