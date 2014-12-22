@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+require 'github-pages-health-check'
+
+domain = ENV['DOMAIN'] || 'beforeitwasround.com'
+check = GitHubPages::HealthCheck.new(domain)
+
+if check.valid?
+  puts "domain (#{domain}) is valid, details:"
+  require 'pp'
+  pp check.to_hash
+else
+  puts "domain (#{domain}) is invalid, reason: #{check.reason.message}"
+end
