@@ -1,6 +1,6 @@
 permalink: /:year/:month/:title.html
 markdown: kramdown
-pygments: true
+highlighter: pygments
 
 gems:
   - jekyll-sitemap
