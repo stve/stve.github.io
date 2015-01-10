@@ -1,0 +1,80 @@
+#!/bin/sh
+#
+# bootstrap
+#
+# Setup all dependencies for this app.
+
+set -e
+
+#
+# Check for npm
+#
+if test ! $(which npm)
+  then
+  echo "  x You need to install npm:"
+  echo "    brew install node"
+  exit
+else
+  echo "  + npm found."
+fi
+
+#
+# Check for bower
+#
+if test ! $(which bower)
+  then
+  echo "  x You need to install Bower:"
+  echo "    npm install -g bower"
+  exit
+else
+  echo "  + Bower found."
+fi
+
+#
+# Check for gulp
+#
+if test ! $(which gulp)
+  then
+  echo "  x You need to install gulp:"
+  echo "    npm install -g gulp"
+  exit
+else
+  echo "  + gulp found."
+fi
+
+
+#
+# Check for Bundler
+#
+if test ! $(which bundle)
+  then
+  echo "  x You need to install Bundler:"
+  echo "    gem install bundler"
+  exit
+else
+  echo "  + Bundler found."
+fi
+
+#
+# Check for PhantomJS
+#
+if test ! $(which phantomjs)
+  then
+  echo "  x You need to install PhantomJS. If you use Homebrew, you can run:"
+  echo "    brew install phantomjs"
+  exit
+else
+  echo "  + PhantomJS found."
+fi
+
+#
+# Installfest
+#
+echo "  + Bootstrapping npm."
+npm install
+
+echo "  + Bootstrapping Bower."
+bower install
+
+echo "  + Bootstrapping Ruby Environment."
+bundle check > /dev/null 2>&1 || bundle install "$@"
