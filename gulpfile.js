@@ -32,7 +32,7 @@ var paths = {
         targets.styles + '/styles.css'
     ],
     statics: [
-        './bower_components/html5shiv/dist/html5shiv.js'
+        './bower_components/html5shiv/dist/html5shiv.min.js'
     ]
 }
 
