@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using Ruby to post to a Facebook Page's wall
+excerpt: Posting to a Facebook wall on behalf of a Page is easy, except when it isn't.
 ---
 
 I was recently tasked with what seemed like a fairly simple request: Post to a Facebook Page via the Facebook API.  This proved to be no small feat.  I've decided to document my steps here to serve as a help to others, and a reminder to myself should I ever need to revisit this in the future.
