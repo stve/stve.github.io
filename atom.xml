@@ -1,5 +1,0 @@
----
-layout: null
-redirect_to:
-  - /feed.xml
----

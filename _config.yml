@@ -28,6 +28,10 @@ exclude:
   - bower.json
   - package.json
 
+feed:
+  path: atom.xml
+
+name: flat - The personal website of Steve Agalloco
 title: flat
 url: http://beforeitwasround.com
 
