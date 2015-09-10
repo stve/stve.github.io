@@ -29,7 +29,7 @@ end
 
 {% endhighlight %}
 
-While this does the job, it's tedious and with large key-sets not as performant as we'd like it to be. What we'd really like is something closer to Memcached's multi-get support. As we considered other solutions, we decided to take a look at Redis' <a href="http://redis.io/commands/eval">scripting support</a> to see if it could help.  Not really knowing much about <a herf="http://www.lua.org">Lua</a>, we were pretty surprised by how powerful Lua was. Using Lua, we can make a single request to Redis, passing all of the keys as an argument to the Lua script:
+While this does the job, it's tedious and with large key-sets not as performant as we'd like it to be. What we'd really like is something closer to Memcached's multi-get support. As we considered other solutions, we decided to take a look at Redis' <a href="http://redis.io/commands/eval">scripting support</a> to see if it could help.  Not really knowing much about <a href="http://www.lua.org">Lua</a>, we were pretty surprised by how powerful Lua was. Using Lua, we can make a single request to Redis, passing all of the keys as an argument to the Lua script:
 
 {% highlight lua %}
 
