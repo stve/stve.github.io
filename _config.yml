@@ -4,6 +4,8 @@ highlighter: pygments
 
 gems:
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
 
 exclude:
   - CNAME
