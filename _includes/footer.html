@@ -8,7 +8,11 @@
         <li><a href="https://twitter.com/anno" title="Twitter">Twitter</a></li>
         <li><a href="https://github.com/stve" title="Github">Github</a></li>
         <li><i class="ss-icon orange">rss</i> <a href="{{ site.data.meta.feed_url }}" title="Feed">Feed</a></li>
-        <li class="pull-right">Copyright {{ site.time | date: '%Y' }}</li>
+        <li class="pull-right">Copyright <script>
+            var year = new Date().getFullYear();
+            document.write(year);
+          </script>
+        </li>
       </ul>
     </nav>
   </div>
