@@ -1,9 +1,8 @@
 _site/*
-.sass-cache
 public
 tmp/*
-css/*
 js/*
 build/*
 node_modules/*
 bower_components/*
+.jekyll-metadata
