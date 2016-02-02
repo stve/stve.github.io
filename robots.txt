@@ -1,3 +1,10 @@
-User-agent: *
+---
+disallows:
+  - /404.html
+---
+
+User-agent: *{% for disallowed in page.disallows %}
+Disallow: {{ disallowed }}{% endfor %}
 Allow: /
 Sitemap: http://beforeitwasround.com/sitemap.xml
+Host: beforeitwasround.com
