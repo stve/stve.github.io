@@ -1,0 +1,28 @@
+// Soaked Theme
+.theme-soaked .sidebar {
+  background-color: $caridade;
+  border-right: 5px solid $pinotnoir;
+  border-left: 5px solid $comfort;
+
+  h1 a {
+    color: $teak;
+    text-decoration: none;
+
+    span {
+      font-family: 'Goudy Bookletter 1911', serif;
+      font-weight: normal;
+    }
+  }
+}
+.theme-soaked .content a,
+.theme-soaked .related-posts li a:hover {
+  color: $pinotnoir;
+}
+
+.post-title, .post-title a {
+  color: $teak;
+
+  span {
+    color: $pinotnoir;
+  }
+}
