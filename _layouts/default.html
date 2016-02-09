@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
 
   <link rel="shortcut icon" href="http://beforeitwasround.com/favicon.ico" />
   <link rel="icon" type="image/png" href="http://beforeitwasround.com/favicon.png" />
@@ -17,28 +27,26 @@
   <meta name="google-site-verification" content="Ho6EAOr5JcIohhOoVCHbu7W2_FA9hHjtYPkHUoApGco" />
 
   <!-- Included CSS Files -->
-  <link rel="stylesheet" type="text/css" href="/assets/biwr.min.css" />
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Goudy+Bookletter+1911" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Goudy+Bookletter+1911" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.data.meta.feed_url }}">
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
-    <script src="/assets/html5shiv.js"></script>
+    <script src="/assets/html5shiv.min.js"></script>
   <![endif]-->
-
 </head>
-<body class="wrap wider">
 
-  {% include header.html %}
+  <body class="layout-reverse theme-soaked">
 
-  <!-- container -->
-  <div class="grid main">
-    {{ content }}
-  </div>
-  <!-- container -->
+    {% include sidebar.html %}
 
-  {% include footer.html %}
+    <div class="content container">
+      {{ content }}
+    </div>
 
-  <!-- Included JS Files -->
-  <script src="/assets/biwr.min.js"></script>
-</body>
+  </body>
 </html>

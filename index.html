@@ -1,29 +1,37 @@
 ---
-layout: columns
+layout: default
+title: Home
 ---
 
-<section>
-  {% for post in site.posts limit:1 %}
-    <article>
-      <header>
-        <h2><a href="{{ post.url }}">{{ post.title }}<span>.</span></a></h2>
-      </header>
+<div class="posts">
+  {% for post in paginator.posts limit:1 %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}<span>.</span>
+      </a>
+    </h1>
 
-      <aside>
-        {{ post.date | date_to_string }}
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-        {% if post.aside %}
-          <p>{{ post.aside }}</p>
-        {% endif %}
-      </aside>
-
-      {{ post.content}}
-
-      <!--
-      <footer>
-        {{ post.date | date_to_string }}
-      </footer>
-    -->
-    </article>
+    {{ post.content }}
+  </div>
   {% endfor %}
-</section>
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

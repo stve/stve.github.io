@@ -1,38 +1,25 @@
 ---
-layout: columns
+layout: default
 ---
 
-<div id="post">
-  <section>
-    <article>
-      <header>
-        <h2><a href="{{ page.url }}">{{ page.title }}<span>.</span></a></h2>
-      </header>
+<div class="post">
+  <h1 class="post-title">{{ page.title }}<span>.</span></h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
+</div>
 
-      <aside>
-        {{ page.date | date_to_string }}
-
-        {% if aside %}
-          <p>{{ aside }}</p>
-        {% endif %}
-      </aside>
-
-      {{ content}}
-
-        <!--
-        <footer>
-          {{ page.date | date_to_string }}
-        </footer>
-      -->
-
-      <div id="related">
-        <h5>Other things I've written that might be related:</h5>
-        <ul class="posts">
-          {% for post in site.related_posts limit:3 %}
-            <li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </article>
-  </section>
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
