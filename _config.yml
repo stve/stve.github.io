@@ -1,11 +1,23 @@
 permalink: /:year/:month/:title.html
 markdown: kramdown
-highlighter: pygments
+
+github: [metadata]
+
+kramdown:
+  input: GFM
+  hard_wrap: false
 
 gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-paginate
+
+sass:
+  sass_dir: src/scss
+  style: :compressed
+
+paginate: 1
 
 exclude:
   - CNAME
@@ -31,6 +43,7 @@ exclude:
 feed:
   path: atom.xml
 
+baseurl: /
 name: flat - The personal website of Steve Agalloco
 title: flat
 url: http://beforeitwasround.com
