@@ -1,0 +1,12 @@
+#!/bin/sh
+# vendor poole
+
+set -e
+
+echo "Downloading poole..."
+
+curl https://github.com/poole/hyde/raw/master/public/css/hyde.css > src/scss/vendor/hyde.scss
+curl https://github.com/poole/hyde/raw/master/public/css/poole.css > src/scss/vendor/poole.scss
+curl https://github.com/poole/hyde/raw/master/public/css/syntax.css > src/scss/vendor/syntax.scss
+
+echo "Complete!"
