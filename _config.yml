@@ -24,21 +24,13 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - Guardfile
-  - config.rb
-  - vendor
-  - js
-  - css
   - src
-  - design
   - script
   - _drafts
-  - build
+  - design
   - node_modules
   - bower_components
-  - gulpfile.js
   - bower.json
-  - package.json
 
 feed:
   path: atom.xml
