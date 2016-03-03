@@ -35,7 +35,7 @@ exclude:
 feed:
   path: atom.xml
 
-baseurl: /
+baseurl: ""
 name: flat - The personal website of Steve Agalloco
 title: flat
 url: http://beforeitwasround.com
