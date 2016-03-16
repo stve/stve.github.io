@@ -13,16 +13,28 @@
       font-weight: normal;
     }
   }
-}
 
-.post-title, .post-title a {
-  color: $teak;
-
-  span {
-    color: $pinotnoir;
+  p {
+    color: $oak;
   }
 }
 
+/* posts */
+.post {
+  a {
+    color: $teak;
+  }
+
+  h1.post-title {
+    color: $teak;
+
+    span {
+      color: $pinotnoir;
+    }
+  }
+}
+
+/* pages */
 .page {
   h1.page-title {
     color: $teak;
@@ -33,10 +45,23 @@
   }
 
   ul li a {
-    color: $pinotnoir;
+    color: $teak;
   }
 }
 
-.theme-soaked .related-posts li a:hover {
-  color: $pinotnoir;
+div.related {
+  font-size: 0.825em;
+
+  h2 {
+    color: $teak;
+
+    span {
+      color: $pinotnoir;
+    }
+  }
+
+  ul.related-posts li a {
+    font-size: 0.725em;
+    color: $teak;
+  }
 }
