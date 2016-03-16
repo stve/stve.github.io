@@ -11,13 +11,10 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-redirect-from
-  - jekyll-paginate
 
 sass:
   sass_dir: src/scss
   style: :compressed
-
-paginate: 1
 
 exclude:
   - CNAME
