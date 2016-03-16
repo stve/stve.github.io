@@ -13,7 +13,7 @@ On a recent project at [Tradier](http://tradier.com), we relied heavily on [Redi
 
 Using the Redis Ruby Gem, we first turned to pipelined requests. Pipelined requests return a future, meaning in order to fully query and load, you essentially have to loop twice:
 
-{% highlight ruby %}
+```ruby
 
 data = {}
 
@@ -27,11 +27,11 @@ data.each do |key,value|
   data[k] = v.value
 end
 
-{% endhighlight %}
+```
 
 While this does the job, it's tedious and with large key-sets not as performant as we'd like it to be. What we'd really like is something closer to Memcached's multi-get support. As we considered other solutions, we decided to take a look at Redis' <a href="http://redis.io/commands/eval">scripting support</a> to see if it could help.  Not really knowing much about <a href="http://www.lua.org">Lua</a>, we were pretty surprised by how powerful Lua was. Using Lua, we can make a single request to Redis, passing all of the keys as an argument to the Lua script:
 
-{% highlight lua %}
+```lua
 
 local collate = function (key)
   local raw_data = redis.call('HGETALL', key)
@@ -50,11 +50,11 @@ for _, key in ipairs(KEYS) do
   data[key] = collate(key)
 end
 
-{% endhighlight %}
+```
 
 The code was fairly simple. We can loop through the `KEYS` and invoke the `collate` method we defined to load the hash data. The challenge then became passing this data back to our ruby code. We found that while Lua objects will not easily serialize back to a Ruby object, Redis' Lua implementation offers up some options: namely cjson and cmsgpack. We need just return from the script and we're now returning data back:
 
-{% highlight lua %}
+```lua
 
 -- return json
 return cjson.encode(response)
@@ -62,11 +62,11 @@ return cjson.encode(response)
 -- return messagepack
 return cmsgpack.pack(data)
 
-{% endhighlight %}
+```
 
 What we found is that between pipelined requests, lua + json, and lua + messagepack, messagepack was the best performer of the three solutions. Our final solution ended up something like this:
 
-{% highlight ruby %}
+```ruby
 
 require 'redis'
 require 'msgpack'
@@ -97,21 +97,20 @@ LUA
 redis = ::Redis.new(:driver => :hiredis)
 data = MessagePack.unpack(redis.eval(lua_msgpack_loader, :keys => keys))
 
-{% endhighlight %}
+```
 
 Of course, no post like this would be complete without a benchmark (using 10K keys):
 
-<pre>
+```
                       user     system      total        real
 lua + json        0.350000   0.010000   0.360000 (  1.242315)
 lua + msgpack     0.260000   0.020000   0.280000 (  1.146377)
 redis pipelined   1.070000   0.020000   1.090000 (  1.759858)
-</pre>
+
+```
 
 Overall, we were pleasantly surprised by Redis and Lua and it's definitely a solution we'll turn to in the future as well.
 
-<hr/>
+---
 
-<div class="well">
-  <p><em>This post has been cross-posted to the <a href="http://stdout.tradier.com">Tradier Developer Blog</a>, for more posts like this, you may want to follow our posts there as well!</em></p>
-</div>
+*This post has been cross-posted to the <a href="http://stdout.tradier.com">Tradier Developer Blog</a>, for more posts like this, you may want to follow our posts there as well!*

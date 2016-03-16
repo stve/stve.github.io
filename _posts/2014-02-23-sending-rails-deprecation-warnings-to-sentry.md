@@ -19,7 +19,7 @@ We use [Sentry](https://getsentry.com) to manage our exception handling, so I fi
 
 Based on the [documentation](http://api.rubyonrails.org/classes/ActiveSupport/Deprecation/Behavior.html), you can also pass a custom handler class or a proc, basically, anything that responds to `call` can be used. When a deprecation warning is issued, the list of behaviors is looped through and passed the deprecation message and callstack:
 
-{% highlight ruby %}
+```ruby
 def warn(message = nil, callstack = nil)
   return if silenced
 
@@ -28,11 +28,11 @@ def warn(message = nil, callstack = nil)
     behavior.each { |b| b.call(m, callstack) }
   end
 end
-{% endhighlight %}
+```
 
 By default, Rails uses `:stderr`. I wanted to keep that behavior, but also include  Sentry. ActiveSupport Notifications are a perfect way to do that. Using the raven gem to hook into Sentry, here's where I landed:
 
-{% highlight ruby %}
+```ruby
 ActiveSupport::Deprecation.behavior = [:stderr, :notify]
 ActiveSupport::Notifications.subscribe('deprecation.rails') do |name, start, finish, id, payload|
   Raven.capture_message("DEPRECATION WARNING", {
@@ -46,4 +46,4 @@ ActiveSupport::Notifications.subscribe('deprecation.rails') do |name, start, fin
     }
   })
 end
-{% endhighlight %}
+```

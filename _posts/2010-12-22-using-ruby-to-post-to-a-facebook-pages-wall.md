@@ -36,7 +36,7 @@ Make sure to record the access token.  Armed with that, you can now make authent
 
 With Mogli, we can very easily obtain a client that we'll use to engage with the API:
 
-{% highlight ruby %}
+```ruby
 access_token = 'my_facebook_access_token'
 page_id = 'my_facebook_page_id'
 
@@ -48,11 +48,11 @@ end.first
 
 page = Mogli::Page.new(:access_token => page.access_token)
 page_client = page.client_for_page
-{% endhighlight %}
+```
 
 `user.accounts` will return an array of accounts which will list any pages and apps you own.  I added a select because we want to manage a specific page so we need to retrieve the page based on the page_id.  Then we use that page's access token to create a new facebook client that we can use to work on behalf of the page.  Now, we just need to use the client to create our wall post:
 
-{% highlight ruby %}
+```ruby
 post_data = {}
 post_data[:name]    = 'Title for my link'
 post_data[:link]    = 'http://path.to/my/link'
@@ -65,8 +65,7 @@ post_data[:actions] = {
 }.to_json
 
 client.post("feed", nil, post_data)
-{% endhighlight %}
-
+```
 
 What I've demonstrated above is a use-case where you'd post a link with a thumbnail image.  Facebook specifies quite a few other things that you can include with your [post](http://developers.facebook.com/docs/reference/api/post).  A few things are not relevant to page publishing, for instance you cannot set privacy on a page's wall post as it's visible to all people that like that page.
 

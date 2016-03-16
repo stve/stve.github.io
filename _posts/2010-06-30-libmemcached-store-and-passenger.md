@@ -9,7 +9,7 @@ I've worked with other caching frameworks before and while i was loathe to intro
 
 The only catch was, we're using passenger.  I wanted to make sure that LibmemcachedStore played nice with passenger's spawning process.  Here's how to do it:
 
-{% highlight ruby %}
+```ruby
 if defined?(PhusionPassenger)
   PhusionPassenger.on_event(:starting_worker_process) do |forked|
     if forked
@@ -21,6 +21,6 @@ if defined?(PhusionPassenger)
     end
   end
 end
-{% endhighlight %}
+```
 
 It'd be nice if all cache stores implemented a reset or disconnect method, in the meantime, we have hacks like this.

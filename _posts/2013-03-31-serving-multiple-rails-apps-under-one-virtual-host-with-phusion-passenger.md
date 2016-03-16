@@ -11,7 +11,7 @@ A while back I was tasked with a unique problem I hadn't encountered before. I w
 
 This is easily accomplished with Passenger, but took some tinkering to figure out. Here's what I ended up with:
 
-{% highlight apacheconf %}
+```apacheconf
 <VirtualHost *:80>
   ServerName mydomain.com
   DocumentRoot "/apps/app1/current/public"
@@ -33,13 +33,13 @@ This is easily accomplished with Passenger, but took some tinkering to figure ou
 
   RackBaseURI /app2
 </VirtualHost>
-{% endhighlight %}
+```
 
 Apache is now properly configured. All that remains is a little setup in the apps themselves. Since the Apache config expects a Rack/Rails app at `/apps/app1/current/public/app2`, you just need to create a symlink in `/apps/app1/current/public` to app2:
 
-{% highlight bash %}
+```bash
 ln -s /apps/app2/current/public app2
-{% endhighlight %}
+```
 
 Depending upon your deployment strategy, you may need to create the symlink each time you deploy. I setup a symlink as part of the capistrano deploy and everything just worked&#8482;.
 
