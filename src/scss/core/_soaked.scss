@@ -14,10 +14,6 @@
     }
   }
 }
-.theme-soaked .content a,
-.theme-soaked .related-posts li a:hover {
-  color: $pinotnoir;
-}
 
 .post-title, .post-title a {
   color: $teak;
@@ -25,4 +21,22 @@
   span {
     color: $pinotnoir;
   }
+}
+
+.page {
+  h1.page-title {
+    color: $teak;
+
+    span {
+      color: $pinotnoir;
+    }
+  }
+
+  ul li a {
+    color: $pinotnoir;
+  }
+}
+
+.theme-soaked .related-posts li a:hover {
+  color: $pinotnoir;
 }
