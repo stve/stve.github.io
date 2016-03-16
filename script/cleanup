@@ -1,0 +1,7 @@
+#!/bin/sh
+# cleanup a build
+
+set -e
+
+echo "Cleaning up..."
+rm -Rf _site
