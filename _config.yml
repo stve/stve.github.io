@@ -38,6 +38,7 @@ feed:
 baseurl: ""
 name: flat - The personal website of Steve Agalloco
 title: flat
+tagline: 'The personal website of Steve Agalloco'
 url: http://beforeitwasround.com
 
 author: Steve Agalloco
