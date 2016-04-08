@@ -35,6 +35,7 @@
 .post {
   a {
     color: $teak;
+    font-weight: bold;
   }
 
   h1.post-title {
@@ -58,6 +59,11 @@
 
   ul li a {
     color: $teak;
+  }
+
+  a {
+    color: $teak;
+    font-weight: bold;
   }
 }
 
