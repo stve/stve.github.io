@@ -11,6 +11,7 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 sass:
   sass_dir: src/scss
@@ -32,36 +33,14 @@ exclude:
 feed:
   path: atom.xml
 
-baseurl: ""
 name: flat - The personal website of Steve Agalloco
 title: flat
+description: before it was round
 tagline: 'The personal website of Steve Agalloco'
 url: http://beforeitwasround.com
 
 author: Steve Agalloco
 email: steve.agalloco@gmail.com
 
-description: before it was round
-keywords:
-  - agalloco
-  - steve agalloco
-  - steve
-  - ruby
-  - rails
-  - jruby
-  - sinatra
-  - eventmachine
-  - github
-  - rubygem
-  - tophat
-  - airbrake
-  - tweetstream
-  - twitter
-  - charlotte
-  - brokerage
-  - api
-  - finance
-  - quote
-  - options
-  - tradier
-  - fintech
+twitter:
+  username: anno

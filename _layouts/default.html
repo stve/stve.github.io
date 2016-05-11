@@ -9,30 +9,18 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
-
   <link rel="shortcut icon" href="http://beforeitwasround.com/favicon.ico" />
   <link rel="icon" type="image/png" href="http://beforeitwasround.com/favicon.png" />
 
-  <title>{% if page.title %} {{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join }}{% else %}{{ site.keywords | join }}{% endif %}" />
-  <meta name="author" content="{{ site.author }}" />
   <meta name="google-site-verification" content="Ho6EAOr5JcIohhOoVCHbu7W2_FA9hHjtYPkHUoApGco" />
+
+  {% seo %}
+  {% feed_meta %}
 
   <!-- Included CSS Files -->
   <link rel="stylesheet" type="text/css" href="/css/styles.css" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Goudy+Bookletter+1911" />
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.data.meta.feed_url }}">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" />
 </head>
 
   <body class="layout-reverse">
