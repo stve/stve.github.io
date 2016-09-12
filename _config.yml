@@ -38,6 +38,7 @@ title: flat
 description: before it was round
 tagline: 'The personal website of Steve Agalloco'
 url: http://beforeitwasround.com
+baseurl: '/'
 
 author: Steve Agalloco
 email: steve.agalloco@gmail.com
