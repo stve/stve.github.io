@@ -36,8 +36,9 @@ feed:
 name: flat - The personal website of Steve Agalloco
 title: flat
 description: before it was round
-tagline: 'The personal website of Steve Agalloco'
-url: http://beforeitwasround.com
+tagline: "The personal website of Steve Agalloco"
+summary: "The personal website of Steve Agalloco"
+url: https://beforeitwasround.com
 baseurl: /
 
 author: Steve Agalloco
