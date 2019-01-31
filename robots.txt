@@ -6,5 +6,5 @@ disallows:
 User-agent: *{% for disallowed in page.disallows %}
 Disallow: {{ disallowed }}{% endfor %}
 Allow: /
-Sitemap: http://beforeitwasround.com/sitemap.xml
+Sitemap: https://beforeitwasround.com/sitemap.xml
 Host: beforeitwasround.com
