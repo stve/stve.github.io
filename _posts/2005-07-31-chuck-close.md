@@ -3,6 +3,7 @@ layout: post
 title: Chuck Close
 wordpress_id: 29
 wordpress_url: http://www.beforeitwasround.com/2006/03/05/chuck-close/
+published: false
 ---
 <style> .flickr-photo { border: solid 1px #000000; } .flickr-yourcomment { } .flickr-frame { float: left; width: 150px; text-align: center; padding: 3px; margin-right: 10px; /* a suggestion - Flickr pink! */ /* background-color: #FFE8F4; */ /* border: 1px solid #FDD8EB; */ } .flickr-caption { font: 75%; color: #666666; margin-top: 0px; } .flickr-buddyicon { margin-right:5px; vertical-align:middle; border: solid 1px; } .flickr-postedby { font: 75%; } </style>
 <p class="flickr-yourcomment"></p>
